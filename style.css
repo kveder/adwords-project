@@ -19,20 +19,22 @@ Author: kveder
   clear: both;
 }
 
-/* ====== Header ===================== */
+/* ====== Header ======================= */
 
 nav ul li {
 	display: inline-block;
+	padding-right: 20px;
 }
 
+/* ====== Form input =================== */
 
 /* ====== Ad Block ===================== */
 
 .ad-block {
 	font-family: arial, sans-serif;
-	margin: 0 auto;
+	margin: 50px auto;
 	padding: 10px;
-	width: 70%;
+	width: 50%;
 	min-width: 300px;
 }
 
@@ -76,7 +78,26 @@ nav ul li {
 /* --- sitelinks --- */
 
 .sitelink {
-	width: 300px;
+	width: 35%;
+	min-width: 200px;
 	text-align: left;
 	float: left;
+	padding: 10px 0 4px 28px;
+	
+}
+
+.sitelink-headline {
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #1A0DAB;
+	padding: 0;
+	margin:0;
+}
+
+.sitelink-desc-1, .sitelink-desc-2 {
+	font-size: 13px;
+	color: #000;
+	padding: 0;
+	margin:0;
+	line-height: 18px;
 }
