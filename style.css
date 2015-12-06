@@ -1,0 +1,82 @@
+/* Styling main content 
+
+Author: kveder
+
+*/
+* {
+	/*border: solid 1px red; */
+}
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+	text-align:center;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ====== Header ===================== */
+
+nav ul li {
+	display: inline-block;
+}
+
+
+/* ====== Ad Block ===================== */
+
+.ad-block {
+	font-family: arial, sans-serif;
+	margin: 0 auto;
+	padding: 10px;
+	width: 70%;
+	min-width: 300px;
+}
+
+.ad-copy {
+	text-align: left;
+}
+
+.ad-headline {
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #1A0DAB;
+	padding: 0;
+	margin:0;
+}
+
+.ad-desc-1, .ad-desc-2 {
+	font-size: 13px;
+	color: #000;
+	padding: 0;
+	margin:0;
+	line-height: 18px;
+}
+
+.ad-icon {
+	display:inline-block;
+	background-color: #EFC439;
+	padding: 0 2px;
+	color:#fff;
+	border-radius:2px;
+	margin:0 7px 0 0;
+}
+
+.ad-display-url {
+	font-size: 13px;
+	color: #006621;
+	padding: 0;
+	margin:0;
+	line-height: 18px;
+}
+
+/* --- sitelinks --- */
+
+.sitelink {
+	width: 300px;
+	text-align: left;
+	float: left;
+}
