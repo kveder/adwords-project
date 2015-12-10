@@ -3,14 +3,20 @@
 Author: kveder
 
 */
-* {
-	/*border: solid 1px red; */
+html {
+
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
 }
 
-.wrapper {
+.container {
 	width: 70%;
 	margin: 0 auto;
-	text-align:center;
+	padding: 20px 0;
+
 }
 
 .group:after {
@@ -21,12 +27,112 @@ Author: kveder
 
 /* ====== Header ======================= */
 
+header {
+
+	text-align:center;
+	background-color: #1F8A70;
+	font-family: 'Open Sans', sans;
+}
+
+h1 {
+
+	color: #FFF;
+}
+
 nav ul li {
 	display: inline-block;
 	padding-right: 20px;
+	margin-top: 30px;
+}
+
+li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #FFF;
+	font-weight: 600;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.logo{
+	color: #fff;
+   background-color: rgb(31, 138, 112);
+   text-shadow: 1px 1px rgb(28, 124, 101), 2px 2px rgb(28, 124, 101), 3px 3px rgb(28, 124, 101), 4px 4px rgb(28, 124, 101), 5px 5px rgb(28, 124, 101), 6px 6px rgb(28, 124, 101), 7px 7px rgb(28, 124, 101), 8px 8px rgb(28, 124, 101), 9px 9px rgb(28, 124, 101), 10px 10px rgb(28, 124, 101), 11px 11px rgb(28, 124, 101), 12px 12px rgb(28, 124, 101), 13px 13px rgb(28, 124, 101), 14px 14px rgb(28, 125, 102), 15px 15px rgb(28, 126, 102), 16px 16px rgb(28, 127, 103), 17px 17px rgb(28, 127, 104), 18px 18px rgb(29, 128, 104), 19px 19px rgb(29, 129, 105), 20px 20px rgb(29, 130, 105), 21px 21px rgb(29, 131, 106), 22px 22px rgb(29, 131, 107), 23px 23px rgb(29, 132, 107), 24px 24px rgb(30, 133, 108), 25px 25px rgb(30, 134, 108), 26px 26px rgb(30, 134, 109), 27px 27px rgb(30, 135, 110), 28px 28px rgb(30, 136, 110), 29px 29px rgb(30, 137, 111), 30px 30px rgb(31, 138, 112);
+  height: 100%;
+  width: 100%;
+  font-size: 55px;
+  text-align: center;
 }
 
 /* ====== Form input =================== */
+
+.form-block {
+
+	width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #FFF;
+	text-align: center;
+	border-radius: 5px;
+	border: 2px solid #FFB03B;
+
+}
+
+.form-headline {
+
+	color: #FFF;
+	font-size: 18px;
+	font-weight: 600;
+	background-color: #FFB03B;
+	border-radius:5px 5px 0 0;
+	padding: 5px;
+	margin: -22px -22px 0 -22px;
+
+}
+
+.form-adcopy {
+	margin:20px auto;
+}
+
+.form-adcopy ul {
+
+	list-style-type: none;
+	list-style-position: outside;
+	padding: 0;
+	margin: 0;
+}
+
+.form-adcopy li {
+
+	padding: 5px;
+	position:relative;
+	}
+
+.form-adcopy label {
+	text-align: left;
+	display: inline-block;
+	float: left;
+	margin-top: 12px;
+	width: 150px;
+}
+
+
+.form-adcopy input {
+
+	border: 2px solid #E8EBED;
+	border-radius: 5px;
+	background: #E8EBED;
+	padding: 10px 15px;
+	width: 250px;
+	height: 40px;
+	transition: all 0.2s ease 0s;
+}
+
+input:focus {
+
+	background-color: #FFF;
+}
+
 
 /* ====== Ad Block ===================== */
 
@@ -101,4 +207,28 @@ nav ul li {
 	padding: 0;
 	margin:0;
 	line-height: 18px;
+}
+
+/* ====== Footer===================== */
+
+footer {
+	color: #FFF;
+	text-align:center;
+	background-color: #004358;
+	font-family: 'Open Sans', sans;
+}
+
+
+
+/* =====================================
+
+		MEDIA QUERIES
+
+========================================*/
+
+@media (min-width: 769px) {
+	.container {
+	
+
+	}
 }
