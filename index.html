@@ -35,26 +35,53 @@
 				</div><!-- end .form-headline -->
 				
 				<form class="form-adcopy">
+					<fieldset>
 					<ul>
 						<li>
 							<label for="ad-headline"> Ad Headline </label>
 							<input type="text" name="ad-headline" id="input-headline" maxlength="25"  placeholder="Headline 25 Max">
-						 </li>
-						 <li>
-							<label>	Display URL </label>
+						</li>
+						<li>
+							<label for="display-url">	Display URL </label>
 							<input type="text" name="display-url" id="input-display-url" maxlength="35" placeholder="Display URL 35 Max">
 						</li>
 						<li>
-							<label> Description line 1 </label>
-							<input type="text" name="desc-line-1" id="input-desc-1" maxlength="35">
+							<label for="desc-1"> Description line 1 </label>
+							<input type="text" name="desc-1" id="input-desc-1" maxlength="35" placeholder="Description line 35 Max">
 						</li>
 						<li>
-							<label> Description line 2 </label>
-							<input type="text" name="desc-line-2" id="input-desc-2" maxlength="35">
+							<label for="desc-2"> Description line 2 </label>
+							<input type="text" name="desc-2" id="input-desc-2" maxlength="35" placeholder="Description line 35 Max">
 						</li>
 					</ul>
+					</fieldset>
 
-				</form>
+					<select id="sitelink-select">
+						<option>No Sitelinks</option>
+						<option value="sitelink">4 Sitelinks</option>
+					</select>
+				</form><!-- end form for ad copy -->
+
+				<form class="form-adcopy form-sitelinks">
+					<fieldset>
+					<ul>
+						<li>
+							<label for="sitelink-headline"> Sitelink Headline </label>
+							<input type="text" name="sitelink-headline" id="input-sitelink-headline-1" maxlength="25"  placeholder="Headline 25 Max">
+						</li>
+						<li>
+							<label for="sitelink-desc-1"> Description line 1 </label>
+							<input type="text" name="sitelink-desc-1" id="input-sitelink-desc-1-1" maxlength="35" placeholder="Description line 35 Max">
+						</li>
+						<li>
+							<label for="sitelink-desc-2"> Description line 2 </label>
+							<input type="text" name="sitelink-desc-2" id="input-sitelink-desc-2-1" maxlength="35" placeholder="Description line 35 Max">
+						</li>
+					</ul>
+					</fieldset>
+				</form><!-- end form for sitelinks -->
+
+
 			</div><!-- end .form-ad -->
 
 			<div class="ad-block group">
@@ -67,9 +94,9 @@
 				</div>
 
 				<div class="sitelink">
-					<p class="sitelink-headline">Get the best product now</p>
-					<p class="sitelink-desc-1">Sitelink Description line 1 </p>
-					<p class="sitelink-desc-2">Sitelink Description line 2 </p>
+					<p class="sitelink-headline" id="sitelink-headline-1">Get the best product now</p>
+					<p class="sitelink-desc-1" id="sitelink-desc-1-1">Sitelink Description line 1 </p>
+					<p class="sitelink-desc-2" id="sitelink-desc-2-1">Sitelink Description line 2 </p>
 				</div>
 				<div class="sitelink">
 					<p class="sitelink-headline">Sitelink headline</p>

@@ -66,9 +66,11 @@ li a {
 
 /* ====== Form input =================== */
 
+
 .form-block {
 
 	width: 40%;
+	min-width: 500px;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #FFF;
@@ -185,11 +187,12 @@ input:focus {
 /* --- sitelinks --- */
 
 .sitelink {
-	width: 35%;
+	width: 50%;
 	min-width: 200px;
 	text-align: left;
 	float: left;
 	padding: 10px 0 4px 28px;
+	display:none;
 	
 }
 
