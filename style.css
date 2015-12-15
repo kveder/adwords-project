@@ -25,6 +25,11 @@ html {
   clear: both;
 }
 
+.main-content {
+	padding-bottom: 0;
+
+}
+
 /* ====== Header ======================= */
 
 header {
@@ -46,7 +51,7 @@ nav ul li {
 }
 
 li a {
-	display: inline-block;
+
 	text-decoration: none;
 	color: #FFF;
 	font-weight: 600;
@@ -56,12 +61,12 @@ li a {
 
 .logo{
 	color: #fff;
-   background-color: rgb(31, 138, 112);
-   text-shadow: 1px 1px rgb(28, 124, 101), 2px 2px rgb(28, 124, 101), 3px 3px rgb(28, 124, 101), 4px 4px rgb(28, 124, 101), 5px 5px rgb(28, 124, 101), 6px 6px rgb(28, 124, 101), 7px 7px rgb(28, 124, 101), 8px 8px rgb(28, 124, 101), 9px 9px rgb(28, 124, 101), 10px 10px rgb(28, 124, 101), 11px 11px rgb(28, 124, 101), 12px 12px rgb(28, 124, 101), 13px 13px rgb(28, 124, 101), 14px 14px rgb(28, 125, 102), 15px 15px rgb(28, 126, 102), 16px 16px rgb(28, 127, 103), 17px 17px rgb(28, 127, 104), 18px 18px rgb(29, 128, 104), 19px 19px rgb(29, 129, 105), 20px 20px rgb(29, 130, 105), 21px 21px rgb(29, 131, 106), 22px 22px rgb(29, 131, 107), 23px 23px rgb(29, 132, 107), 24px 24px rgb(30, 133, 108), 25px 25px rgb(30, 134, 108), 26px 26px rgb(30, 134, 109), 27px 27px rgb(30, 135, 110), 28px 28px rgb(30, 136, 110), 29px 29px rgb(30, 137, 111), 30px 30px rgb(31, 138, 112);
-  height: 100%;
-  width: 100%;
-  font-size: 55px;
-  text-align: center;
+    background-color: rgb(31, 138, 112);
+    text-shadow: 1px 1px rgb(28, 124, 101), 2px 2px rgb(28, 124, 101), 3px 3px rgb(28, 124, 101), 4px 4px rgb(28, 124, 101), 5px 5px rgb(28, 124, 101), 6px 6px rgb(28, 124, 101), 7px 7px rgb(28, 124, 101), 8px 8px rgb(28, 124, 101), 9px 9px rgb(28, 124, 101), 10px 10px rgb(28, 124, 101), 11px 11px rgb(28, 124, 101), 12px 12px rgb(28, 124, 101), 13px 13px rgb(28, 124, 101), 14px 14px rgb(28, 125, 102), 15px 15px rgb(28, 126, 102), 16px 16px rgb(28, 127, 103), 17px 17px rgb(28, 127, 104), 18px 18px rgb(29, 128, 104), 19px 19px rgb(29, 129, 105), 20px 20px rgb(29, 130, 105), 21px 21px rgb(29, 131, 106), 22px 22px rgb(29, 131, 107), 23px 23px rgb(29, 132, 107), 24px 24px rgb(30, 133, 108), 25px 25px rgb(30, 134, 108), 26px 26px rgb(30, 134, 109), 27px 27px rgb(30, 135, 110), 28px 28px rgb(30, 136, 110), 29px 29px rgb(30, 137, 111), 30px 30px rgb(31, 138, 112);
+    height: 100%;
+  	width: 100%;
+  	font-size: 55px;
+  	text-align: center;
 }
 
 /* ====== Form input =================== */
@@ -69,8 +74,7 @@ li a {
 
 .form-block {
 
-	width: 40%;
-	min-width: 500px;
+	width: 515px;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #FFF;
@@ -99,15 +103,15 @@ li a {
 .form-adcopy ul {
 
 	list-style-type: none;
-	list-style-position: outside;
+	
 	padding: 0;
 	margin: 0;
 }
 
 .form-adcopy li {
 
-	padding: 5px;
-	position:relative;
+	padding: 5px 0;
+	
 	}
 
 .form-adcopy label {
@@ -115,7 +119,8 @@ li a {
 	display: inline-block;
 	float: left;
 	margin-top: 12px;
-	width: 150px;
+	width: 170px;
+
 }
 
 
@@ -125,9 +130,23 @@ li a {
 	border-radius: 5px;
 	background: #E8EBED;
 	padding: 10px 15px;
-	width: 250px;
+	width: 277px;
 	height: 40px;
 	transition: all 0.2s ease 0s;
+}
+
+.form-callouts ul li {
+	display: inline-block;
+}
+
+.form-callouts input{
+	width: 221px;
+
+}
+
+.hide-sitelinks {
+	display: none; /* Activated with radio button JS */
+
 }
 
 input:focus {
@@ -135,15 +154,29 @@ input:focus {
 	background-color: #FFF;
 }
 
+.radio-buttons {
+
+	text-align: center;
+}
+
+input[type="radio"] {
+
+	 	float: left;
+	 	margin-right: 10px;
+	 	width: 20px;
+	 	height:20px;
+	
+}
+
 
 /* ====== Ad Block ===================== */
 
 .ad-block {
 	font-family: arial, sans-serif;
-	margin: 50px auto;
+	margin: 10px auto;
 	padding: 10px;
-	width: 50%;
-	min-width: 300px;
+	width: 515px;
+	
 }
 
 .ad-copy {
@@ -184,6 +217,14 @@ input:focus {
 	display: inline-block;
 }
 
+.background-screen {
+	background: url("img/screen.jpg") #fff no-repeat;
+	margin: 20px auto 0;
+	padding:60px 0;
+	height:490px;
+	width: 700px;
+}
+
 /* --- sitelinks --- */
 
 .sitelink {
@@ -192,7 +233,6 @@ input:focus {
 	text-align: left;
 	float: left;
 	padding: 10px 0 4px 28px;
-	display:none;
 	
 }
 

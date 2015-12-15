@@ -28,7 +28,7 @@
 		</div> <!-- end container -->
 	</header>
 
-		<div class="container">
+		<div class="container group main-content">
 			<div class="form-block">
 				<div class="form-headline">
 					<p>Insert Your Ad Copy!</p>
@@ -55,14 +55,36 @@
 						</li>
 					</ul>
 					</fieldset>
+					<fieldset class="form-callouts" name="callouts" >
+					<legend>Callouts</legend>
+						<ul> 
+							<li>
+								<input type="text" name="callout-1" maxlength="25" placeholder="1 callout text">
+							</li>
+							<li>
+								<input type="text" name="callout-2" maxlength="25" placeholder="2 callout text">
+							</li>
+							<li>
+								<input type="text" name="callout-3" maxlength="25" placeholder="3 callout text">
+							</li>
+							<li>
+								<input type="text" name="callout-4" maxlength="25" placeholder="4 callout text">
+							</li>
+						</ul>
+					</fieldset>
 
-					<select id="sitelink-select">
-						<option>No Sitelinks</option>
-						<option value="sitelink">4 Sitelinks</option>
-					</select>
+					<fieldset class="radio-buttons">
+							<label>
+								<input type="radio" name="sitelink-status" value="sitelinks-off" checked="checked"> No Sitelinks
+							</label>
+							<label>
+								<input type="radio" name="sitelink-status" value="show-sitelinks"> Add 4 Sitelinks
+							</label>
+					</fieldset>
+					
 				</form><!-- end form for ad copy -->
 
-				<form class="form-adcopy form-sitelinks">
+				<form class="form-adcopy hide-sitelinks show-sitelinks">
 					<fieldset>
 					<ul>
 						<li>
@@ -79,12 +101,15 @@
 						</li>
 					</ul>
 					</fieldset>
+				
+
+
 				</form><!-- end form for sitelinks -->
 
 
 			</div><!-- end .form-ad -->
-
-			<div class="ad-block group">
+		<div class="background-screen">
+			<div class="ad-block">
 				<div class="ad-copy">
 					<p class="ad-headline">Twenty five symbols max</p>
 					<span class="ad-icon">Ad</span>
@@ -92,36 +117,35 @@
 					<p class="ad-desc-1">Ad Description line 1 35 symbols max </p>
 					<p class="ad-desc-2">Ad Description line 2 35 symbols max </p>
 				</div>
-
-				<div class="sitelink">
+				<div class="sitelink hide-sitelinks show-sitelinks">
 					<p class="sitelink-headline" id="sitelink-headline-1">Get the best product now</p>
 					<p class="sitelink-desc-1" id="sitelink-desc-1-1">Sitelink Description line 1 </p>
 					<p class="sitelink-desc-2" id="sitelink-desc-2-1">Sitelink Description line 2 </p>
 				</div>
-				<div class="sitelink">
+				<div class="sitelink hide-sitelinks show-sitelinks">
 					<p class="sitelink-headline">Sitelink headline</p>
 					<p class="sitelink-desc-1">Sitelink Description line 1 </p>
 					<p class="sitelink-desc-2">Sitelink Description line 2 </p>
 				</div>
-				<div class="sitelink">
+				<div class="sitelink hide-sitelinks show-sitelinks">
 					<p class="sitelink-headline">Sitelink headline</p>
 					<p class="sitelink-desc-1">Sitelink Description line 1 </p>
 					<p class="sitelink-desc-2">Sitelink Description line 2 </p>
 				</div>
-				<div class="sitelink">
+				<div class="sitelink hide-sitelinks show-sitelinks">
 					<p class="sitelink-headline">Sitelink headline</p>
 					<p class="sitelink-desc-1">Sitelink Description line 1 </p>
 					<p class="sitelink-desc-2">Sitelink Description line 2 </p>
 				</div>
 			</div><!-- end .ad-block -->
-		</div><!-- end .container -->
-
-
+		</div>
+		</div><!-- end .container (CONTENT BLOCK)-->
 		<footer>
 			<div class="container">
 				<p>All rights are <b>Not</b> reserved 2016 </p>
 			</div>
 		</footer>
 		<script type="text/javascript" src="app.js"> </script>
+
 	</body>
 </html>
