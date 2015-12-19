@@ -2,7 +2,7 @@ $(function () {
 
 	 $("input[name=sitelink-status]").on("change",function() {
          var test = $(this).val();
-         $(".hide-sitelinks").hide();
+         $(".toggle-sitelinks").hide();
          $("."+test).show();
     });
 
@@ -23,6 +23,7 @@ $(function () {
 		$('.ad-desc-2').text($(this).val());
 	});
 
+	//sitelink input - Sitelink 1
 	$('#input-sitelink-headline-1').keyup(function() {
 		$('#sitelink-headline-1').text($(this).val());
 	});
@@ -34,6 +35,43 @@ $(function () {
 		$('#sitelink-desc-2-1').text($(this).val());
 	});
 
+	//sitelink input - Sitelink 2
+	$('#input-sitelink-headline-2').keyup(function() {
+		$('#sitelink-headline-2').text($(this).val());
+	});
+
+	$('#input-sitelink-desc-1-2').keyup(function() {
+		$('#sitelink-desc-1-2').text($(this).val());
+	});
+	$('#input-sitelink-desc-2-2').keyup(function() {
+		$('#sitelink-desc-2-2').text($(this).val());
+	});
+
+	//sitelink input - Sitelink 3
+	$('#input-sitelink-headline-3').keyup(function() {
+		$('#sitelink-headline-3').text($(this).val());
+	});
+
+	$('#input-sitelink-desc-1-3').keyup(function() {
+		$('#sitelink-desc-1-3').text($(this).val());
+	});
+	$('#input-sitelink-desc-2-3').keyup(function() {
+		$('#sitelink-desc-2-3').text($(this).val());
+	});
+
+
+	//sitelink input - Sitelink 3
+	$('#input-sitelink-headline-4').keyup(function() {
+		$('#sitelink-headline-4').text($(this).val());
+	});
+
+	$('#input-sitelink-desc-1-4').keyup(function() {
+		$('#sitelink-desc-1-4').text($(this).val());
+	});
+	$('#input-sitelink-desc-2-4').keyup(function() {
+		$('#sitelink-desc-2-4').text($(this).val());
+	});
+
 	    
 });
 
@@ -41,3 +79,4 @@ $(function () {
 // Learning material:
 // http://stackoverflow.com/questions/2777139/how-to-use-jquery-to-show-hide-divs-based-on-radio-button-selection
 // http://tympanus.net/codrops/2010/06/07/fancy-sliding-form-with-jquery/
+//http://unslider.com/ add slider to the form!
