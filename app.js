@@ -1,12 +1,15 @@
 $(function () {
 
 	 $("input[name=sitelink-status]").on("change",function() {
-         var test = $(this).val();
+         var siteLinks = $(this).val();
          $(".toggle-sitelinks").hide();
-         $("."+test).show();
+         $("."+siteLinks).show();
     });
 
 
+
+	 //ad copy input
+	 
 	$('#input-headline').keyup(function() {
 		$('.ad-headline').text($(this).val());
 	});
@@ -23,7 +26,26 @@ $(function () {
 		$('.ad-desc-2').text($(this).val());
 	});
 
+	//add Callout Extensions
+	
+  
+
+	$('#callout-1').keyup(function() {
+	$('#ad-callout-1').text($(this).val());
+	
+	});
+
+	$('#callout-2').keyup(function(){
+	$('#ad-callout-2').text($(this).val());
+
+	
+	});
+
+
+
 	//sitelink input - Sitelink 1
+
+
 	$('#input-sitelink-headline-1').keyup(function() {
 		$('#sitelink-headline-1').text($(this).val());
 	});
@@ -60,7 +82,7 @@ $(function () {
 	});
 
 
-	//sitelink input - Sitelink 3
+	//sitelink input - Sitelink 4
 	$('#input-sitelink-headline-4').keyup(function() {
 		$('#sitelink-headline-4').text($(this).val());
 	});
